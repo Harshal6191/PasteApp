@@ -9,7 +9,9 @@ import { Toaster } from 'react-hot-toast'
 createRoot(document.getElementById('root')).render(
   
     <Provider store={store}>
-    <App />
+      <StrictMode>
+      <App />
+      </StrictMode>
     <Toaster/>
     </Provider>
   
